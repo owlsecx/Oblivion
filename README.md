@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-Real-time ransomware behavior detection via
+
+Oblivion is a secure data-wiping and anti-forensics tool that irreversibly destroys files, free space and metadata on authorized systems. It overwrites data with multiple passes, removes filesystem traces and verifies erasure. It is intended strictly for authorized data-sanitization and decommissioning tasks.
 
 ---
 
 ## ✨ Features
 
-- Real-time ransomware detection, process containment, quarantine and integrity guard
+
+- Multi-pass secure overwriting of files and directories
+- Free-space wiping to remove recoverable deleted data
+- Metadata and filesystem-trace removal
+- Configurable overwrite patterns and pass count
+- Erasure verification and a structured wipe log
+- Offline operation with a --self-test mode
 
 ---
 
@@ -37,8 +44,11 @@ Real-time ransomware behavior detection via
 
 ## 🚀 Usage
 
+
 ```bash
 ./Oblivion
+./Oblivion --self-test
+./Oblivion --help
 ```
 
 ---
